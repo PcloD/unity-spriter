@@ -1,0 +1,6 @@
+[submodule "SpriterDotNet"]
+	path = SpriterDotNet
+	url = https://github.com/loodakrawa/SpriterDotNet.git
+[submodule "Assets/utils"]
+	path = Assets/utils
+	url = git@github.com:shadowmint/unity-packages.git
