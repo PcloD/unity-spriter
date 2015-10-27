@@ -1,0 +1,22 @@
+{
+  "name": "unity-airships",
+  "version": "0.0.1",
+  "description": "",
+  "files": [
+    "Assets",
+    "README.md"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-core": "^5.8.23",
+    "gulp": "^3.9.0",
+    "gulp-insert": "^0.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-shell": "^0.4.2",
+    "gulp-toml": "^0.1.1",
+    "gulp-unity": "shadowmint/gulp-unity#0.0.4",
+    "run-sequence": "^1.1.2"
+  }
+}
