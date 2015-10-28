@@ -4,3 +4,6 @@
 [submodule "Assets/lib/spriter"]
 	path = Assets/lib/spriter
 	url = git@github.com:shadowmint/unity-spriter-core.git
+[submodule "Assets/lib/utils"]
+	path = Assets/lib/utils
+	url = git@github.com:shadowmint/unity-packages.git
