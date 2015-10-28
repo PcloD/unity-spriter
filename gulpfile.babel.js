@@ -8,15 +8,15 @@ import p from 'path';
 
 var config = {
   spriter: p.join(__dirname, 'SpriterDotNet', 'SpriterDotNet'),
-  assets: p.join(__dirname, 'Assets', 'SpriterDotNetCore'),
+  assets: p.join(__dirname, 'Assets', 'lib', 'spriter', 'core'),
 };
 
 gulp.task('default', function(callback) {
-  run('deploy', 'test', callback);
+  run('test', callback);
 });
 
 // Copy source into assets folder
-gulp.task('deploy', function() {
+gulp.task('sync', function() {
   return gulp.src(`${config.spriter}/**/*.cs`)
     .pipe(gulp.dest(config.assets));
 });
