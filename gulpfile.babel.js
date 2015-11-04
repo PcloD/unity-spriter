@@ -37,3 +37,21 @@ gulp.task('test', function() {
       }
     }));
 });
+
+
+// Run core tests
+gulp.task('n', function() {
+  return gulp.src('./package.json')
+    .pipe(unity({
+      method: 'N.TestRunner.Run',
+      args: ['--filterTests=N'],
+      debug: (v) => {
+        unity.debug(v, [
+          { pattern: /.*DEBUG.*/, color: 'yellow', context: 0 },
+          { pattern: /.*ERROR.*/, color: 'red', context: 0 },
+          { pattern: /\! Test.*/, color: 'red' },
+          { pattern: /\- Test.*/, color: 'green' },
+        ])
+      }
+    }));
+});
